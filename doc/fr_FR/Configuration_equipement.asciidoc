@@ -1,0 +1,115 @@
+= Configuration de l'équipement
+
+Page de configuration appelée en cliquant sur "configuration avancée"
+
+Cette page est composée de 5 onglets :
+
+* *Informations*
+* *Affichage*
+* *Disposition*
+* *Alertes*
+* *Commentaire*
+
+Il est accessible en cliquant sur *Configuration Avancée* d'un équipement
+
+== Informations
+Cet onglet présente des informations utiles concernant l'équipement comme :
+
+* ID
+* Nom
+* Date de création
+* Type
+* Tentative échouée
+* Date de dernière communication
+* Dernière mise à jour
+
+[TIP]
+Le type permet de rapidement identifier le plugin qui a créé l'équipement (openzwave, virtuel, ...)
+
+[TIP]
+La date de dernière communication permet de consulter la date d'actualisation de la dernière commande de l'équipement
+
+== Affichage
+Cet onglet permet de gérer les paramètres d'affichage de l'équipement.
+
+*Widget*
+
+Pour chaque mode d'affichage de l'équipement, Dashboard, Design, Vue et Mobile, il est possible de :
+
+* Visible : afficher/masquer l'équipement
+* Afficher le nom : afficher/masquer le nom de l'équipement dans le widget
+* Afficher le nom de l'objet : afficher/masquer le nom de l'objet dans lequel se trouve l'équipement. Sera affiché entre parathèses ().
+* Couleur de fond :  ** Défaut ** Transparent (défaut doit être décoché) ** choix de la couleur (défaut doit être décoché)
+* Opacité : valeur entre 0 et 1. le séparateur est le point, ex 0.4
+* Couleur du texte ** Défaut ** choix de la couleur (défaut doit être décoché)
+* Bordures ** Défaut ** choix de la couleur (défaut doit être décoché)
+* Arrondit des bordures (en px): exemple 10
+
+[TIP]
+L'opacité n'est pas prise en compte. Vous avez utilisé la virgule comme séparateur et nom le point. La bonne syntaxe est 0.4.
+
+[TIP]
+Vous pouvez prévisualiser le rendu en cliquant sur l'icone oeil à droite de Dashboard, Design et Vue.
+La prévisualisation n'est pas disponible pour la vue mobile.
+
+*Paramètres optionnels sur la tuile*
+
+Certains widgets peuvent disposer de paramètres optionnels. Vous reporter à la description du widget pour les détails.
+
+== Disposition
+
+Cet onglet permet de choisir entre : 
+
+* Defaut et *Tableau
+
+*Defaut* 
+Pas de paramètre. L'affichage est celui de l'équipement fourni avec le plugin (ex Thermostat et sa mise en forme particulière).
+
+*Tableau*
+En choisissant *Tableau* il est possible de définir une disposition prenant en compte :
+
+* *Configuration générale*
+* Nombre de ligne
+* Nombre de colonne
+* Centrer dans les cases
+* Style général des cases (CSS) (ex padding:3px;)
+* Style du tableau (CSS)
+
+* *Configuration détaillée*
+** Chaque case du tableau permet
+*** Définir un texte pour la case
+*** D'appliquer un style spécifique à la case
+
+[TIP]
+A la création du tableau, chaque commande est positionnée sur la première case. Vous pouvez les déplacer avec votre souris en glissé/déplacé.
+
+[TIP]
+Après avoir spécifié le nombre de ligne et colonne, vous devez sauvegarder et recharger la page pour voir apparaitre le tableau.
+
+== Alertes
+
+* *Informations Batteries*
+** Type de batterie : fournit le type de batterie dans l'équipement (ex 1x3V CR123A). Information pas systématiquement disponible.
+
+* *Seuils spécifiques Batteries*
+** Danger / Warning : permet de définir le seuil qui changera la couleur de fond de l'équipement en rouge.
+** Warning / Ok : permet de définir le seuil qui changera la couleur de fond de l'équipement en orange.
+
+* *Alertes Communications*
+** Danger : permet de définir le temps sans mise à jour de la *Date de dernière communication* qui changera la couleur de fond de l'équipement en rouge.
+
+==  Commentaire
+
+Cet onglet permet d'ajouter un commentaire sur l'équipement. Exemple date de dernier changement de piles ou toute autre information vous semblant pertinente.
+
+== Liens
+
+Permets d'afficher le graphique des liens avec d'autres équipements.
+
+== Log
+
+Permets d'afficher le temps réel de l'activité uniquement de l'équipement.
+
+== Information
+
+Permets d'afficher toutes les informations brutes de l'équipement.
